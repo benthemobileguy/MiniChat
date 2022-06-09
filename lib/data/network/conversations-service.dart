@@ -7,7 +7,6 @@ class ConversationsService extends NetworkService{
   /// get symptoms
   Future<List<dynamic>> fetchConversations() async {
     List<dynamic> _data = await get(AppStrings.BASE_URL, "inbox.json");
-    print(_data);
     List<dynamic> _conversationList = Conversation.fromJsonList(_data);
     return _conversationList;
   }
