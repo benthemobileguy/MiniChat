@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
   @override
 
   Widget build(BuildContext context) {
-    conversationsService.fetchConversations();
+
     return Scaffold(
       backgroundColor: ColorManager.backgroundColor,
       body: FutureBuilder(
