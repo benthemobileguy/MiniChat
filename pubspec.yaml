@@ -1,0 +1,69 @@
+name: mini_chat
+description: A Test Project for Movies
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.2"
+
+dependencies:
+  flutter_launcher_icons: ^0.9.0
+
+  flutter:
+    sdk: flutter
+  #Flutter Dependencies here
+  hexcolor: ^2.0.7
+  provider: ^6.0.2
+  progress_dialog: ^1.2.4
+  fluttertoast: ^8.0.7
+  email_validator: ^2.0.1
+  flutter_dotenv: ^5.0.2
+  shimmer: ^2.0.0
+  progress_indicator_button: ^0.0.3
+  http: ^0.13.4
+  flutter_svg: ^1.0.3
+
+analyzer:
+  strong-mode: true
+  language:
+    enableSuperMixins: true
+
+  cupertino_icons: ^1.0.4
+
+dev_dependencies:
+  flutter_lints: ^1.0.4
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+
+  uses-material-design: true
+  #assets here
+  assets:
+    - .env
+    - assets/fonts/
+    - assets/images/
+
+  fonts:
+    - family: Nunito
+      fonts:
+        - asset: assets/fonts/nunito/NunitoSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/nunito/NunitoSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/nunito/NunitoSans-Regular.ttf
+          weight: 500
+        - asset: assets/fonts/nunito/NunitoSans-Light.ttf
+          weight: 400
+
+    - family: Ubuntu
+      fonts:
+        - asset: assets/fonts/ubuntu/Ubuntu-Bold.ttf
+          weight: 600
+        - asset: assets/fonts/ubuntu/Ubuntu-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/ubuntu/Ubuntu-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/ubuntu/Ubuntu-Light.ttf
+          weight: 300
