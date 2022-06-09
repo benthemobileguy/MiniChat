@@ -12,7 +12,7 @@ class ApiException implements Exception {
         this.preventRedirect = false,
         this.context}) {
     switch (code) {
-
+     //show error messages here when error occurs
     }
   }
 }

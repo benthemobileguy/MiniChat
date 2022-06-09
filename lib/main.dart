@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mini_chat/app/app.dart';
 
-void main() {
+Future<void> main() async {
   runApp(MyApp());
 }

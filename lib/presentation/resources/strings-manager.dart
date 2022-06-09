@@ -1,4 +1,5 @@
 class AppStrings {
+  static const String BASE_URL = "https://idtm-media.s3.amazonaws.com/programming-test/api/";
   static const String noRouteFound = "No Route Found";
   static const String movies = "Movies";
 

@@ -8,7 +8,6 @@ class MyApp extends StatefulWidget {
   MyApp._internal(); // private named constructor
   static final MyApp instance =
   MyApp._internal(); // single instance -- singleton
-
   factory MyApp() => instance; // factory for the class instance
 
   @override
@@ -23,7 +22,7 @@ class _MyAppState extends State<MyApp> {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         onGenerateRoute: RouteGenerator.getRoute,
-        initialRoute: Routes.onboardingRoute,
+        initialRoute: Routes.homeRoute,
         theme: getApplicationTheme(),
       ),
     );
