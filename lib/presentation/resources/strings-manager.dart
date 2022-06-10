@@ -6,6 +6,7 @@ class AppStrings {
   static const String favourites = "Favourites";
   static const String signUp = "Sign up";
   static const String login = "Login";
+  static const String home = "Conversations";
   static const String sampleText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat tristique in morbi nunc enim vitae. Gravida facilisis sit lobortis eget. Lorem faucibus vulputate purus viverra eu elit nec nisl.";
   static const String dontHaveAccount = "Don't have an account yet?";
   static const String alreadyHaveAccount = "Already have an account?";

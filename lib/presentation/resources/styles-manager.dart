@@ -20,7 +20,7 @@ TextStyle getRegularStyle(
       fontSize,
       FontConstants.fontFamilyNunito,
       lineHeight,
-      FontWeightManager.regular, color);
+      FontWeightManager.semiBold, color);
 }
 TextStyle getGradientStyle(
     {double fontSize = FontSize.s19, double lineHeight, Color color}) {
@@ -52,7 +52,7 @@ TextStyle getLightStyle(
 // bold text style
 
 TextStyle getBoldStyle(
-    {double fontSize = FontSize.s12, double lineHeight, Color color}) {
+    {double fontSize, double lineHeight, Color color}) {
   return _getTextStyle(
       fontSize,
       FontConstants.fontFamilyNunito,

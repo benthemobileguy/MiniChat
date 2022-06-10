@@ -8,18 +8,27 @@ class NetworkService {
   NetworkService({this.context});
 
   Future<List<dynamic>> get(String url, String path) async {
-
     http.Response response =
     await http.get(Uri.parse(url +path));
     int statusCode = response.statusCode;
+
     switch (statusCode) {
       case 200:
-        List<dynamic> data = json.decode(response.body);
-        return data;
+      //we need to check for trailing commas if not api response throws error
+        String formatted;
+        var subString = response.body.substring(response.body.length - 3);
+        if(!subString.contains("}")){
+          formatted = response.body.substring(0, response.body.length - 3);
+          formatted = formatted + "]";
+          return jsonDecode(formatted);
+        }else{
+          var formatted = response.body.substring(0, response.body.length - 3);
+          formatted = formatted + "}]";
+          return jsonDecode(formatted);
+        }
+
         break;
       default:
-        dynamic data = json.decode(response.body);
-
         throw ApiException(
           context: context,
           message: "error message from the api",
@@ -28,4 +37,5 @@ class NetworkService {
         break;
     }
   }
+
 }
